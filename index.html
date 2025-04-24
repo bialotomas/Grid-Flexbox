@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Viajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="container mx-auto py-8">
+        <h1 class="text-4xl font-bold text-center text-blue-600">Explorando el Mundo</h1>
+        <p class="text-center text-gray-600 mt-2">Una colección de momentos inolvidables</p>
+    </header>
+
+    <main class="container mx-auto px-4 pb-12">
+        <!-- Grid de imágenes con diferentes tamaños -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Imagen grande que ocupa 2 columnas y 2 filas en pantallas medianas y grandes -->
+            <div class="md:col-span-2 md:row-span-2">
+                <img src="https://source.unsplash.com/random/800x600/?travel,mountains" alt="Paisaje de montañas" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen normal -->
+            <div>
+                <img src="https://source.unsplash.com/random/400x300/?travel,beach" alt="Playa tropical" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen normal -->
+            <div>
+                <img src="https://source.unsplash.com/random/400x300/?travel,city" alt="Ciudad histórica" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen que ocupa 2 columnas en pantallas grandes -->
+            <div class="lg:col-span-2">
+                <img src="https://source.unsplash.com/random/800x400/?travel,architecture" alt="Arquitectura impresionante" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen normal -->
+            <div>
+                <img src="https://source.unsplash.com/random/400x500/?travel,nature" alt="Naturaleza exuberante" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen normal -->
+            <div>
+                <img src="https://source.unsplash.com/random/400x300/?travel,food" alt="Gastronomía local" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen que ocupa 2 filas -->
+            <div class="md:row-span-2">
+                <img src="https://source.unsplash.com/random/400x800/?travel,people" alt="Gente local" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+            
+            <!-- Imagen normal -->
+            <div>
+                <img src="https://source.unsplash.com/random/400x300/?travel,sunset" alt="Atardecer espectacular" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
