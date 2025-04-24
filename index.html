@@ -13,46 +13,72 @@
     </header>
 
     <main class="container mx-auto px-4 pb-12">
-        <!-- Grid de imágenes con diferentes tamaños -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Imagen grande que ocupa 2 columnas y 2 filas en pantallas medianas y grandes -->
-            <div class="md:col-span-2 md:row-span-2">
-                <img src="https://source.unsplash.com/random/800x600/?travel,mountains" alt="Paisaje de montañas" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/alps.jpg" alt="Montañas de Suiza" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-xl font-bold">Montañas de Suiza</h3>
+                    <p class="text-white text-sm mt-1">Majestuosos Alpes suizos cubiertos de nieve durante el amanecer</p>
+                </div>
             </div>
             
             <!-- Imagen normal -->
-            <div>
-                <img src="https://source.unsplash.com/random/400x300/?travel,beach" alt="Playa tropical" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/bali.jpg" alt="Playa de Bali" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Playa de Bali</h3>
+                    <p class="text-white text-xs mt-1">Aguas cristalinas y arena blanca en el paraíso indonesio</p>
+                </div>
+            </div>
+            
+            <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/tokio.jpg" alt="Tokio Nocturno" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Tokio Nocturno</h3>
+                    <p class="text-white text-xs mt-1">Luces brillantes y vida urbana en la capital japonesa</p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-2 relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/venice.jpg" alt="Venecia, Italia" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Venecia, Italia</h3>
+                    <p class="text-white text-xs mt-1">Canales históricos y arquitectura renacentista en la ciudad del agua</p>
+                </div>
             </div>
             
             <!-- Imagen normal -->
-            <div>
-                <img src="https://source.unsplash.com/random/400x300/?travel,city" alt="Ciudad histórica" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-            </div>
-            
-            <!-- Imagen que ocupa 2 columnas en pantallas grandes -->
-            <div class="lg:col-span-2">
-                <img src="https://source.unsplash.com/random/800x400/?travel,architecture" alt="Arquitectura impresionante" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-            </div>
-            
-            <!-- Imagen normal -->
-            <div>
-                <img src="https://source.unsplash.com/random/400x500/?travel,nature" alt="Naturaleza exuberante" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/amazonia.jpg" alt="Selva Amazónica" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Selva Amazónica</h3>
+                    <p class="text-white text-xs mt-1">Biodiversidad increíble en el pulmón del planeta</p>
+                </div>
             </div>
             
             <!-- Imagen normal -->
-            <div>
-                <img src="https://source.unsplash.com/random/400x300/?travel,food" alt="Gastronomía local" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/thai.jpg" alt="Gastronomía Tailandesa" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Gastronomía Tailandesa</h3>
+                    <p class="text-white text-xs mt-1">Sabores exóticos y especias aromáticas en cada plato</p>
+                </div>
             </div>
             
-            <!-- Imagen que ocupa 2 filas -->
-            <div class="md:row-span-2">
-                <img src="https://source.unsplash.com/random/400x800/?travel,people" alt="Gente local" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="md:row-span-2 relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/elephants.jpg" alt="Masai Mara, Kenia" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Masai Mara, Kenia</h3>
+                    <p class="text-white text-xs mt-1">Safari africano y encuentros con la vida salvaje</p>
+                </div>
             </div>
             
-            <!-- Imagen normal -->
-            <div>
-                <img src="https://source.unsplash.com/random/400x300/?travel,sunset" alt="Atardecer espectacular" class="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div class="relative group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="img/santorini.jpg" alt="Santorini, Grecia" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 opacity-90 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-lg font-bold">Santorini, Grecia</h3>
+                    <p class="text-white text-xs mt-1">Casas blancas y azules con vistas al mar Egeo</p>
+                </div>
             </div>
         </div>
     </main>
